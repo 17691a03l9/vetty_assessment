@@ -1,0 +1,27 @@
+<div class="header">
+<h2>Jira Dasboard</h2>
+</div>
+<div class="button-container">
+  <button (click)="openAddParentCardDialog()">Add Item</button>
+</div>
+
+<div class="card-container">
+  <div *ngFor="let parentCard of cards; let parentIndex = index" class="card"  (dragover)="allowDrop($event)" 
+  (drop)="drop($event, parentIndex)">
+    <h2>{{ parentCard.title }}<button (click)="removeParentCard(parentIndex)">X</button></h2> 
+    <div class="parent-card">
+    <div  draggable="true"  *ngFor="let child of parentCard.children; let childIndex = index"
+    (dragstart)="drag($event, parentIndex, childIndex)">
+      <div class="child-card">
+        <h3>{{ child.title }}<button (click)="removeChildCard(parentIndex, childIndex)">X</button></h3>
+        <p>{{ child.description }}</p>
+        <p>Created at: {{ child.creationTime }}</p>
+      </div>
+    </div>
+  </div>  
+
+    <div class="card-button-container">
+      <button class="add-button" (click)="openAddChildCardDialog(parentIndex)">+</button>
+    </div>
+  </div>
+</div>

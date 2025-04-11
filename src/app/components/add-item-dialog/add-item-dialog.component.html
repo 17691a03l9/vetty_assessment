@@ -1,0 +1,14 @@
+<h2 mat-dialog-title>{{ isChild ? 'Add Child Card' : 'Add Parent Card' }}</h2>
+<mat-dialog-content>
+  <form [formGroup]="cardForm" (ngSubmit)="onSubmit()">
+    <mat-form-field>
+      <mat-label>Title</mat-label>
+      <input matInput formControlName="title" required>
+    </mat-form-field>
+    <mat-form-field *ngIf="isChild">
+      <mat-label>Description</mat-label>
+      <textarea matInput formControlName="description"></textarea>
+    </mat-form-field>
+    <button mat-button type="submit">Save</button>
+  </form>
+</mat-dialog-content>

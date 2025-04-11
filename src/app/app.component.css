@@ -1,0 +1,99 @@
+.button-container {
+  display: flex;
+  justify-content: flex-end; 
+  margin-bottom: 20px; 
+}
+.header{
+  display: flex;
+  justify-content: center;
+}
+.card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  gap: 20px; 
+}
+
+
+.card {
+  position: relative;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 700px;
+  overflow: hidden; 
+  background-color: #f9f9f9; 
+}
+
+.parent-card {
+  position: relative; 
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  max-height: 600px;
+}
+
+.child-card {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #e9ecef;
+}
+
+.child-card h3 {
+  font-size: 16px;
+  margin: 0 0 5px; 
+  color: #333; 
+}
+
+.child-card p {
+  margin: 3px 0;
+  color: #555; 
+}
+
+/* Add button styles */
+.add-button {
+  background-color: #007bff; 
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s; 
+}
+
+.add-button:hover {
+  background-color: #0056b3; 
+}
+
+.card h2 {
+  font-size: 18px;
+  margin: 0 0 10px; 
+  color: #333; 
+}
+
+.card-button-container {
+  position: absolute;
+  bottom: 10px; 
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+button {
+  background-color: transparent; 
+  border: none; 
+  color: #ff0000; 
+  font-size: 16px;
+  cursor: pointer; 
+  margin-left: 10px; 
+}
+
+button:hover {
+  text-decoration: underline; 
+}
