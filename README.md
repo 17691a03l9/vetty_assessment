@@ -25,3 +25,19 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# Vetty_assessment
+
+## Description
+its the todolist project did by in angular with dnd functionalities in html and js
+
+## Prerequisites
+Before you begin, ensure you have met the following requirements:
+- [Node.js 18 version](https://nodejs.org/) installed on your machine.
+- Optionally, install Angular CLI 16 globally: you can run the below command in cmd
+`npm install -g @angular/cli@16`
+ after that create a folder in your local and open the folder in cmd and clone the project from git repositry with the below command
+ `git clone https://github.com/17691a03l9/vetty_assessment.git`
+ and open the project in vs code and run the below command on cmd in your project terminal for nodemodules installation
+ `npm install`
+ after the installation run below command for build the application
+ `ng serve`
